@@ -22,7 +22,7 @@ VPNUSER=""
 VPNPASS=""
 
 generateKey () {
-  KEY=`cat /dev/urandom | tr -dc _A-Z-a-z-0-9 | head -c 16`
+  KEY=`cat /dev/urandom | tr A-Z-a-z-0-9 | head -c 6`
 }
 
 backupCredentials () {
